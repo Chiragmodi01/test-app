@@ -1,24 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import "./App.css";
+import Search from "./components/Search";
+import Filters from "./components/Filters";
+import ProductListing from "./components/ProductListing";
+import { useStore } from "./store/useStore";
 
 function App() {
+  const fetchProducts = useStore((state) => state.fetchProducts);
+
+  useEffect(() => {
+    fetchProducts();
+  }, [fetchProducts]);
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Fake Store</h1>
       </header>
+      <main>
+        <Search />
+        <Filters />
+        <ProductListing />
+      </main>
     </div>
   );
 }
