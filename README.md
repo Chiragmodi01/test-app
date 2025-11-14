@@ -2,6 +2,13 @@
 
 A modern React-TypeScript application that provides an interactive product browsing experience with advanced filtering, searching, and sorting capabilities.
 
+<p align="center">
+<img width="848"alt="Screenshot 2025-11-14 at 9 01 40 PM" src="https://github.com/user-attachments/assets/0d366dfb-e502-4096-95fa-f1c5f486966c" />
+<img width="300"  alt="Screenshot 2025-11-14 at 9 03 11 PM" src="https://github.com/user-attachments/assets/cc38b098-3a1c-419e-8f23-35301ac2f9d7" />
+</p>
+
+
+
 ## 📋 Problem Statement
 
 Build a product listing application that allows users to:
